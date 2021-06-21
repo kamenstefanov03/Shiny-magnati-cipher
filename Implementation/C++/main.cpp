@@ -419,7 +419,17 @@ int main()
         getch();
         system("cls");
 
-        // Number of bit shifts
+         cout << "Splitting the key: " << key << endl;
+        string left = key.substr(0, 28);
+        cout << "Left side: " << left << endl;
+        string right = key.substr(28, 28);
+        cout << "Right side: " << right << endl;
+
+        cout << "Press any key to continiue..." << endl;
+        getch();
+        system("cls");
+
+         // Number of bit shifts
         int shift_table[16] = { 1, 1, 2, 2,
 							2, 2, 2, 2,
 							1, 2, 2, 2,
@@ -455,16 +465,6 @@ int main()
                 cout << setw(5) << key_comp[i];
         }
         cout << endl;
-
-        cout << "Press any key to continiue..." << endl;
-        getch();
-        system("cls");
-
-        cout << "Splitting the key: " << key << endl;
-        string left = key.substr(0, 28);
-        cout << "Left side: " << left << endl;
-        string right = key.substr(28, 28);
-        cout << "Right side: " << right << endl;
 
         cout << "Press any key to continiue..." << endl;
         getch();
